@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Cambia 'main' al nombre de tu rama principal si es diferente
+      - main  
 
 jobs:
   build:
@@ -13,10 +13,6 @@ jobs:
     - name: Checkout código fuente
       uses: actions/checkout@v2
 
-    - name: Configurar JDK 11 (o la versión que desees)
-      uses: actions/setup-java@v3
-      with:
-        java-version: 11  # Puedes cambiar esto a la versión de Java que desees, por ejemplo, '16'
-
     - name: Ejecutar pruebas Maven
       run: mvn test
+
