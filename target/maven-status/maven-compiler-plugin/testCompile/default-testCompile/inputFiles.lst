@@ -1,6 +1,6 @@
-/home/victor/Escritorio/Shopery/src/test/java/Steps/HomeMenus.java
-/home/victor/Escritorio/Shopery/src/test/java/Steps/Home.java
-/home/victor/Escritorio/Shopery/src/test/java/TestRunner.java
-/home/victor/Escritorio/Shopery/src/test/java/Functions/Main.java
-/home/victor/Escritorio/Shopery/src/test/java/Steps/TextReport.java
-/home/victor/Escritorio/Shopery/src/test/java/Steps/GoogleTest.java
+/home/victor/Escritorio/QAProject/src/test/java/Steps/TextReport.java
+/home/victor/Escritorio/QAProject/src/test/java/Functions/Main.java
+/home/victor/Escritorio/QAProject/src/test/java/Steps/Telefónica.java
+/home/victor/Escritorio/QAProject/src/test/java/Steps/HomeMenus.java
+/home/victor/Escritorio/QAProject/src/test/java/Steps/Movistar.java
+/home/victor/Escritorio/QAProject/src/test/java/Steps/LoginTest.java

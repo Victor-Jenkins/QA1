@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: Steps.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 11.396 s <<< FAILURE! - in Steps.LoginTest
+user can navigate and search results on Movistar.com(Check the Movistar.com)  Time elapsed: 9.135 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.140 with binary path /usr/bin/google-chrome 
+Host info: host: 'victor-X555LDB', ip: '127.0.1.1'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.3-060203-generic', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --headless=new, --proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --no-sandbox, --disable-background-networ..., --enable-features=NetworkSe..., --disable-background-timer-..., --disable-backgrounding-occ..., --disable-breakpad, --disable-client-side-phish..., --disable-component-extensi..., --disable-default-apps, --disable-features=TranslateUI, --disable-hang-monitor, --disable-ipc-flooding-prot..., --disable-popup-blocking, --disable-prompt-on-repost, --disable-renderer-backgrou..., --disable-sync, --force-color-profile=srgb, --metrics-recording-only, --no-first-run, --password-store=basic, --use-mock-keychain, --hide-scrollbars, --mute-audio, --window-size=1366,768], excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /home/victor/Escritorio/QAP..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://www.movistar.es/particulares/movistarplus/
+selenide.baseUrl: http://localhost:8080
+
+user can navigate and search results in responsive mobile mode on www.telefonica.com(Check the www.telefonica.com)  Time elapsed: 1.325 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.140 with binary path /usr/bin/google-chrome 
+Host info: host: 'victor-X555LDB', ip: '127.0.1.1'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.3-060203-generic', java.version: '11.0.20.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*, --headless=new, --proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --no-sandbox, --disable-background-networ..., --enable-features=NetworkSe..., --disable-background-timer-..., --disable-backgrounding-occ..., --disable-breakpad, --disable-client-side-phish..., --disable-component-extensi..., --disable-default-apps, --disable-features=TranslateUI, --disable-hang-monitor, --disable-ipc-flooding-prot..., --disable-popup-blocking, --disable-prompt-on-repost, --disable-renderer-backgrou..., --disable-sync, --force-color-profile=srgb, --metrics-recording-only, --no-first-run, --password-store=basic, --use-mock-keychain, --hide-scrollbars, --mute-audio, --window-size=390,850], excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /home/victor/Escritorio/QAP..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://www.telefonica.com/es/
+selenide.baseUrl: http://localhost:8080
+

@@ -1,6 +1,6 @@
-Steps/Home.class
+Steps/LoginTest.class
 Steps/HomeMenus.class
+Steps/Movistar.class
 Steps/TextReport.class
-Steps/GoogleTest.class
+Steps/Telefónica.class
 Functions/Main.class
-TestRunner.class
