@@ -13,16 +13,10 @@ jobs:
     - name: Checkout código fuente
       uses: actions/checkout@v2
 
-    - name: Obtener la versión de Java del POM
-      id: java-version
-      run: |
-        echo "::set-output name=java_version::$(xmllint --xpath '/*[local-name()="project"]/*[local-name()="properties"]/*[local-name()="maven.compiler.source"]/text()' pom.xml)"
-      shell: bash
-
-    - name: Configurar JDK
+    - name: Configurar JDK 11 (o la versión que desees)
       uses: actions/setup-java@v2
       with:
-        java-version: ${{ steps.java-version.outputs.java_version }}  # Utiliza la versión del POM
+        java-version: 11  # Puedes cambiar esto a la versión de Java que desees, por ejemplo, '16'
 
     - name: Ejecutar pruebas Maven
       run: mvn test
