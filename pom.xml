@@ -102,8 +102,13 @@
     <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide</artifactId>
-      <version>6.13.1</version>
+      <version>6.17.2</version>
     </dependency>
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.0.3</version> <!-- Utiliza la versión más reciente de WebDriverManager -->
+</dependency>
 
 
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
