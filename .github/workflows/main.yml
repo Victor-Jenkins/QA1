@@ -13,21 +13,16 @@ jobs:
     - name: Checkout código fuente
       uses: actions/checkout@v2
 
-    - name: Configurar JDK 1.8
+    - name: Obtener la versión de Java del POM
+      id: java-version
+      run: |
+        echo "::set-output name=java_version::$(xmllint --xpath '/*[local-name()="project"]/*[local-name()="properties"]/*[local-name()="maven.compiler.source"]/text()' pom.xml)"
+      shell: bash
+
+    - name: Configurar JDK
       uses: actions/setup-java@v2
       with:
-        java-version: 1.8
+        java-version: ${{ steps.java-version.outputs.java_version }}  # Utiliza la versión del POM
 
-    - name: Compilar y ejecutar pruebas
-      run: |
-        mvn clean test
-
-    - name: Crear reporte Allure
-      run: |
-        mvn allure:report
-
-    - name: Subir resultados de Allure como un artefacto
-      uses: actions/upload-artifact@v2
-      with:
-        name: allure-results
-        path: target/allure-results
+    - name: Ejecutar pruebas Maven
+      run: mvn test
