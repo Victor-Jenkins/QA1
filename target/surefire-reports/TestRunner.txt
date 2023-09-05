@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.131 s <<< FAILURE! - in TestRunner
+initializationError(TestRunner)  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalArgumentException: C:\Users\VICTOR\Documents\GitHub\Shopery\src\test\resources\Steps is not valid. Try <uri or path>/<name>.feature[:LINE]*
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\VICTOR\Documents\GitHub\Shopery\src\test\resources\Steps
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\VICTOR\Documents\GitHub\Shopery\src\test\resources\Steps
+
